@@ -33,6 +33,7 @@ RateLimitsView()
 
 ```
 Sources/
+├── EbayAnalytics.swift          # Main module entry point
 ├── Models/
 │   ├── AnalyticsData.swift      # Core analytics data structures
 │   ├── RateLimit.swift          # API rate limit models
@@ -40,13 +41,18 @@ Sources/
 ├── Views/
 │   ├── AnalyticsView.swift      # Main analytics dashboard
 │   ├── RateLimitsView.swift     # Rate limit monitoring
-│   └── EmptyStateView.swift     # Empty state handling
+│   ├── EmptyStateView.swift     # Empty state handling
+│   └── AppIconPreview.swift     # App icon preview component
 ├── ViewModels/
-│   ├── SellAnalyticsViewModel.swift
-│   └── DeveloperAnalyticsViewModel.swift
-└── Services/
-    ├── SellAnalyticsService.swift
-    └── DeveloperAnalyticsService.swift
+│   ├── SellAnalyticsViewModel.swift        # Seller analytics view model
+│   └── DeveloperAnalyticsViewModel.swift   # Developer analytics view model
+├── Services/
+│   ├── SellAnalyticsService.swift          # Seller analytics API service
+│   ├── SellAnalyticsServiceProtocol.swift  # Seller service protocol
+│   ├── DeveloperAnalyticsService.swift     # Developer analytics API service
+│   └── DeveloperAnalyticsServiceProtocol.swift  # Developer service protocol
+└── Resources/
+    └── AppIconGenerator.swift   # App icon generation utility
 ```
 
 ## Dependencies
